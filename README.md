@@ -138,10 +138,8 @@ $ npm install husky --save-dev
 
 Add new scripts to the script section in the `package.json` file.
 ```json
-{
-    "scripts": {
-        "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx lint-staged\""
-    }
+"scripts": {
+    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx lint-staged\""
 }
 ```
 
