@@ -149,3 +149,5 @@ $ npm run configure-husky
 ```
 
 Thats it! Everything is now configured. When you do a `$ git commit -m "My changes"` both linting using ESLint and code formatting using Prettier will be applied to the project.
+
+**Note:** If it becomes necessary to bypass this process, the `$ git commit -m "Important update" --no-verify` command can be used.
