@@ -10,9 +10,9 @@ IMHO - many build systems require much configuration and a careful hand to maint
 ## 2. Versions
 The versions used when creating this document:
 ```
-Angular 14.2.2
-ESLint 8.18.0
-Husky 8.0.1
+Angular 14.1.0
+ESLint 8.27.0
+Husky 8.0.2
 lint-staged 13.0.3
 Prettier 2.7.1
 ```
@@ -117,16 +117,14 @@ $ npm install lint-staged --save-dev
 
 Add a lint-staged section to the `package.json` file after the script section.
 ```json
-{
-    "lint-staged": {
-        "**/*.{js,ts,jsx,tsx}": [
-            "eslint",
-            "prettier --write"
-        ],
-        "**/*.{html,scss,css,json}": [
-            "prettier --write"
-        ]
-    }
+"lint-staged": {
+    "**/*.{js,ts,jsx,tsx}": [
+        "eslint",
+        "prettier --write"
+    ],
+    "**/*.{html,scss,css,json}": [
+        "prettier --write"
+    ]
 }
 ```
 
