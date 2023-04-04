@@ -145,7 +145,7 @@ Add a lint-staged section to the `package.json` file after the script section.
         "eslint",
         "prettier --write"
     ],
-    "**/*.{html,scss,css,json}": [
+    "**/*.{html,scss,css,json,xml}": [
         "prettier --write"
     ]
 }
